@@ -23,7 +23,8 @@ function Data({ person, SetPerson }) {
 
   const passingvalue = (e) => {
     console.log(e.target.value);
-    history.push("/edit/user");
+    const id = e.target.value
+    history.push("/edit/user/" +id);
   };
 
  
@@ -46,7 +47,7 @@ function Data({ person, SetPerson }) {
           <Card.Footer className="chf">
             <Button
               className="footbtn"
-              value={value.id}
+              value={index}
               onClick={passingvalue}
               variant="primary"
             >

@@ -79,7 +79,7 @@ function App() {
                 />  
             </Route>
 
-            <Route path="/edit/user">
+            <Route path="/edit/user/:id">
                <Mainpage 
                  userDetail="Edit User"
                  children={<EditUser person={person} SetPerson={SetPerson}/>}
